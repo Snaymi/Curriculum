@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('font/Montserrat-Medium.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing: border-box;
+
+}
+.container{
+    border: 5px solid #000;
+    border-radius: 10px;
+    margin: 3px;
+    height: 100%;
+    display: flex;
+}
+.content1{
+    flex-grow: 1;
+    height: 100%;
+}
+.content2{
+    background-color: #006eff;
+    flex-grow: 10;
+    height: 100%;
+    border-left: 5px solid #000;
+}
+.img-box{
+    display: block;
+    text-align: center;
+}
+.profile{
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 5px solid #132831;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+h2{
+    font-size: 25px;
+    margin: 10px 0;
+    color: #132831;
+}
+.small-icon{
+    font-size: 20px;
+    background-color: #132831;
+    border-radius: 50%;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+}
+.small-icon:hover{
+    background-image: url('img/background.gif');
+    background-size: cover;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+a{
+    text-decoration: none;
+}
+.box-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.box-contact{
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.language-content{
+    width: 150px;
+    text-align: center;
+}
+.progress-bar{
+    width: 100%;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+}
+.progress-english{
+    height: 100%;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    width: 75%;
+    
+}
+.progress-portuguese{
+    height: 100%;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+}
+.box-skills{
+    text-align: center;
+    gap: 5px;
+    width: 150px;
+}
+.icon{
+    font-size: 30px;
+    background-color: #56add3;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+}
+.skill-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.progress-css{
+    width: 40%;
+    height: 7.5px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
