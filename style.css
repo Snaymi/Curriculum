@@ -24,7 +24,7 @@ body{
     height: 100%;
 }
 .content2{
-    background-color: #006eff;
+    background-color: #666;
     flex-grow: 10;
     height: 100%;
     border-left: 5px solid #000;
@@ -112,25 +112,80 @@ a{
     width: 150px;
 }
 .icon{
+    color: #fff;
     font-size: 30px;
-    background-color: #56add3;
+    background-color: #132831;
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #130707;
     box-shadow: 0 0 10px rgba(4,51,66,255);
+    padding: 3px;
 }
 .skill-content{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
+    margin-top:10px;
 }
 .progress-css{
-    width: 40%;
-    height: 7.5px;
+    width: 45%;
+    height: 7px;
    background-image: url('img/social-media.gif');
     border-radius: 10px;
     text-align: center;
-    color: #fff;
     box-shadow: 0 0 10px rgba(4,51,66,255);
     border: 1px solid #000;
+}
+.progress-html{
+    width: 35%;
+    height: 7px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
+.progress-github{
+    width: 50%;
+    height: 7px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
+.progress-js{
+    width: 15%;
+    height: 7px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
+.progress-outsystems{
+    width: 30%;
+    height: 7px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
+.outsystems-logo{
+    width: 40px;
+    background-color:#132831;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outsystems{
+    width: 35px;
+}
+.other-skills{
+    margin-top: 30px;
 }
