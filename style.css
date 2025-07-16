@@ -20,15 +20,10 @@ body{
     display: flex;
 }
 .content1{
-    flex-grow: 1;
-    height: 100%;
+    width: 30%;
+    background-color: #a4bad2;
 }
-.content2{
-    background-color: #666;
-    flex-grow: 10;
-    height: 100%;
-    border-left: 5px solid #000;
-}
+
 .img-box{
     display: block;
     text-align: center;
@@ -41,12 +36,12 @@ body{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 h2{
-    font-size: 25px;
+    font-size: 40px;
     margin: 10px 0;
     color: #132831;
 }
 .small-icon{
-    font-size: 20px;
+    font-size: 40px;
     background-color: #132831;
     border-radius: 50%;
     color: #fff;
@@ -60,6 +55,10 @@ h2{
     background-size: cover;
     transform: scale(1.1);
     transition: 300ms;
+}
+p{
+    font-size: 25px;
+
 }
 a{
     text-decoration: none;
@@ -79,7 +78,7 @@ a{
     margin-bottom: 5px;
 }
 .language-content{
-    width: 150px;
+    width: 200px;
     text-align: center;
 }
 .progress-bar{
@@ -109,11 +108,11 @@ a{
 .box-skills{
     text-align: center;
     gap: 5px;
-    width: 150px;
+    width: 200px;
 }
 .icon{
     color: #fff;
-    font-size: 30px;
+    font-size: 45px;
     background-color: #132831;
     border-radius: 50%;
     border: 1px solid #130707;
@@ -172,7 +171,7 @@ a{
     border: 1px solid #000;
 }
 .outsystems-logo{
-    width: 40px;
+    width: 55px;
     background-color:#132831;
     border-radius: 50%;
     border: 1px solid #000;
@@ -184,8 +183,62 @@ a{
 
 }
 .outsystems{
-    width: 35px;
+    width: 45px;
 }
 .other-skills{
     margin-top: 30px;
+}
+.content2{
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    border-left: 2px solid #000;
+}
+.tittle{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.box-content2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #dce3ed;
+}
+.text{
+    width: 60%;
+    font-size: 25px;
+    text-align: center;
+    text-align: justify;
+    margin-left: 30px;
+    opacity: 0.8;
+}
+.box-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+}
+h3{
+    font-size: 25px;
+    margin:0;
+}
+.education-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.education-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin:0
+}
+.education-text{
+    margin:0;
+    opacity: 0.8;
+    font-size: 20px;
 }
