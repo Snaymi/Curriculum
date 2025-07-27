@@ -363,4 +363,17 @@ h4{
     opacity: 0.8;
     font-size: 12px;
 }
+.form-bar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.form-bar p{
+    margin:0;
+}
+.form-bar .progress-bar{
+    margin:0;
+}
 
