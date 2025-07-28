@@ -18,7 +18,7 @@ body{
     border: 5px solid #000;
     border-radius: 10px;
     margin: 3px;
-    height: 100%;
+
     display: flex;
     width: 1480px;
     background: linear-gradient(to right, #a4bad2, #d4d8e6);
@@ -26,7 +26,8 @@ body{
 .content1{
     width: 48%;
     background: linear-gradient(to right, #a4bad2, #d4d8e6);
-    letter-spacing:-0.5px
+    letter-spacing:-0.5px;
+    padding: 10px;
 }
 
 .img-box{
@@ -187,7 +188,7 @@ a{
     box-shadow: 0 0 10px rgba(4,51,66,255);
     border: 1px solid #000;
 }
-.outsystems-logo{
+.box-logo{
     width: 45px;
     background-color:#132831;
     border-radius: 50%;
@@ -199,7 +200,7 @@ a{
     align-items: center;
 
 }
-.outsystems{
+.icon-img{
     width: 35px;
 }
 .other-skills{
@@ -208,7 +209,6 @@ a{
 .content2{
     display:flex;
     justify-content: center;
-    height: 100%;
     border-left: 2px solid #000;
     letter-spacing: -1px;
 }
@@ -357,7 +357,25 @@ h4{
     background-image: url('img/social-media.gif');
     border-radius: 10px;
     color: #fff;
-    width: 75%;
+    width: 95%;
+}
+.progress-office{
+    width: 60%;
+    height: 7px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
+.progress-software-hardware{
+    width: 80%;
+    height: 7px;
+   background-image: url('img/social-media.gif');
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
 }
 .skill-name{
     opacity: 0.8;
