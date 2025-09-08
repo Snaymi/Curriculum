@@ -7,10 +7,14 @@
     font-family: 'Montserrat', sans-serif;
     src: url('font/Montserrat-Medium.ttf');
 }
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
    
 }
 p{
@@ -24,18 +28,35 @@ a{
     text-decoration: none;
 }
 .header{
-    background-color: red;
+    background: linear-gradient(to right, #a4bad2, #d4d8e6);
+    position: relative;
+    border: 1px solid black;
 
 }
 .header.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 0 20px;
 }
 .info{
     display: flex;
     align-items: center;
+}
+.info span{
+    background-color: rgb(162, 236, 255);
+    padding: 10px;
+    border-radius: 3px;
+    transform: 400ms;
+    cursor: pointer;
+}
+.info span:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+.info span:active{
+    border: solid 2px #004347;
+    transform: scale(1.03);
 }
 .info span{
     margin-right: 10px;
@@ -43,23 +64,44 @@ a{
 .menu{
     cursor: pointer;
 }
+.menu.open .barra:last-child{
+    transform: rotate(405deg) translateY(-10px) scale(1.1);
+    background-color: rgb(1, 57, 109);
+}
+.menu.open .barra:nth-child(2){
+    transform: translateX(100px)
+}
+.menu.open .barra:first-child{
+    transform: rotate(-405deg) translateY(10px) scale(1.1);
+    background-color: rgb(1, 57, 109);
+}
 .barra{
-    background-color: #fff;
+    background-color: #000;
     height: 2px;
     width: 30px;
-    margin: 5px
+    margin: 5px;
+    transition: 800ms ease;
 }
 .container{
     margin: 3px auto;
-    display: flex;
     width: 1150px;
+    overflow-x: hidden;
+}
+.content1.show-menu{
+    transform: translateX(0);
+    opacity: 1;
 }
 .content1{
-    width: 48%;
     background: var(--primary-color);
     letter-spacing:-0.5px;
     padding: 10px;
     border: 5px solid #000;
+    transform: translateX(-120%);
+    z-index: 2;
+    position: absolute;
+    transition: 300ms;
+    margin-top: 91px;
+    opacity: 0;
 }
 
 .img-box{
@@ -236,6 +278,15 @@ h2{
 }
 .other-skills{
     margin-top: 30px;
+}
+.content2.menu-open {
+  transform: translateX(250px); /* mesmo valor que o menu ocupa */
+  transition: transform 0.3s ease;
+}
+
+/* Conteúdo principal */
+.content2 {
+  transition: transform 0.3s ease;
 }
 .content2{
     display:flex;
