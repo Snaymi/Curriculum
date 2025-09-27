@@ -43,8 +43,6 @@ close.forEach(close => {
 
 
 menu.addEventListener('click', function () {
-
-alert('teste');
   nav.classList.toggle('show');
   menu.classList.toggle('hex')
 });
