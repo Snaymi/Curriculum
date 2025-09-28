@@ -611,15 +611,15 @@ body{
         transform: translateX(0);
     }
     .circle .form:first-child{
-        opacity: 0.3;
+        opacity: 0.5;
     }
     
     .circle .form:nth-child(2){
-        opacity: 0.3;
+        opacity: 0.5;
     }
     
     .circle .form:last-child{
-        opacity: 0.3;
+        opacity: 0.5;
     }
     .certificates{
         display: flex;
@@ -678,7 +678,8 @@ body{
     font-size: 40px;
     }
     .box-skills .soft{
-        font-size: 12px;
+        font-size: 11px;
+        color: var(--light-blue-800)
     }
     .form-bar{
         width: 100px;
@@ -687,7 +688,8 @@ body{
         opacity: 1;
     }
     .form-bar .ability{
-        font-size: 14px;
+        font-size: 12px;
+        white-space: nowrap;
     }
     .progress-bar p {
         left: 45px;
@@ -754,7 +756,7 @@ body{
     .skill-content:first-child .element:last-child{
             position: relative;
             right: -90px;
-            top: 15px;
+            top: 20px;
     }
     .skill-content:last-child .element:first-child{
         position: relative;
