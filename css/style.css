@@ -114,13 +114,15 @@ body{
     transform: scale(1.1);
 }
 .swiper-button-prev::after{
-    font-size: 15px;
+    font-size: 30px;
     margin-left: -30px;
+    font-weight: bold;
 }
 .swiper-button-next::after{
-    font-size: 15px;
+    font-size: 30px;
     margin-right: -30px;
-}
+    font-weight: bold;
+}   
 
 .contact{
     display:flex;
@@ -475,7 +477,7 @@ body{
 }
 .certificatesSwiper .swiper-button-next,
 .certificatesSwiper .swiper-button-prev {
-  color: var(--light-blue-200); /* ou outra cor */
+  color: var(--light-blue-500); /* ou outra cor */
   top: 50%;
   transform: translateY(10%);
 }
