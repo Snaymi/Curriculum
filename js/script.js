@@ -11,7 +11,25 @@ const uni = document.getElementById("unicesumar");
 const declacacaoUni = document.getElementById("declaracaoUnicesumar");
 const menu = document.getElementById("btn-menu");
 const nav = document.getElementById("navigation");
+const copilotStudio = document.querySelector("#produtividade");
+const objPython = document.querySelector("#obj-python");
+const oriPython = document.querySelector("#ori-python");
+const colectionsPython = document.querySelector("#colections-python");
+const certificateColectionsPython = document.querySelector("#certificate-colections-python");
+const logic = document.querySelector("#logic");
+const certificateLogic = document.querySelector("#certificate-logic");
 
+logic.addEventListener('click', function() {
+  certificateLogic.classList.add('clicked');
+})
+
+objPython.addEventListener('click', function() {
+  oriPython.classList.add('clicked');
+})
+
+copilotStudio.addEventListener('click', function() {
+  studio.classList.add('clicked');
+})
 
 uni.addEventListener('click', function() {
   declacacaoUni.classList.add('clicked');

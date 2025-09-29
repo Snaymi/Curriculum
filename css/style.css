@@ -437,6 +437,9 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+.complementary-courses img{
+    cursor: pointer;
+}
 .course-content{
     color: #fff;
     text-align: center;
