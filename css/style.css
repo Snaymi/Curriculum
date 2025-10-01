@@ -401,6 +401,24 @@ body{
     box-shadow: 0 0 10px rgba(4,51,66,255);
     border: 1px solid #000;
 }
+.progress-react{
+    width: 10%; /* altere conforme sua skill */
+    height: 7px;
+    background-color: var(--light-blue-500);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
+.progress-angular{
+    width: 15%; /* altere conforme sua skill */
+    height: 7px;
+    background-color: var(--light-blue-500);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(4,51,66,255);
+    border: 1px solid #000;
+}
 .progress-ia{
     width: 43%; /* altere conforme sua skill */
     height: 7px;
@@ -754,7 +772,11 @@ body{
     }
     .skill-content:first-child .element:nth-child(4){
             position: relative;
-            right: -41px;
+            right: -32px;
+    }
+    .skill-content:first-child .element:nth-child(5){
+            position: relative;
+            right: -50px;
     }
     .skill-content:first-child .element:last-child{
             position: relative;
@@ -767,7 +789,7 @@ body{
     }
     .skill-content:last-child .element:nth-child(2){
         position: relative;
-        right: 40px;
+        right: 50px;
     }
     .skill-content:last-child .element:nth-child(3){
         position: relative;
@@ -775,7 +797,11 @@ body{
     }
     .skill-content:last-child .element:nth-child(4){
         position: relative;
-        right: 40px;
+        right: 32px;
+    }
+    .skill-content:last-child .element:nth-child(5){
+        position: relative;
+        right: 50px;
     }
     .skill-content:last-child .element:last-child{
         position: relative;
