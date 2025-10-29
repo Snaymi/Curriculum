@@ -1,67 +1,31 @@
-const superiorEstacio = document.getElementById("superiorEstacio");
-const superiorEstacioDiploma = document.getElementById("superiorEstacioDiploma");
-const close = document.querySelectorAll(".close");
-const integracaoIa = document.getElementById("Ia");
-const iA = document.getElementById("integracaoIa");
-const py = document.getElementById("python");
-const certificatePython = document.getElementById("certificatePython");
-const ingles = document.getElementById("ingles-avancado");
-const inglesCertificate = document.getElementById("inglesCertitificate");
-const uni = document.getElementById("unicesumar");
-const declacacaoUni = document.getElementById("declaracaoUnicesumar");
-const menu = document.getElementById("btn-menu");
-const nav = document.getElementById("navigation");
-const copilotStudio = document.querySelector("#produtividade");
-const objPython = document.querySelector("#obj-python");
-const oriPython = document.querySelector("#ori-python");
-const colectionsPython = document.querySelector("#colections-python");
-const certificateColectionsPython = document.querySelector("#certificate-colections-python");
-const logic = document.querySelector("#logic");
-const certificateLogic = document.querySelector("#certificate-logic");
+const iconLightOrDark = document.querySelector('#light');
+const icon = document.querySelector('.ph');
+const html = document.documentElement;
+const pixelBoxes = document.querySelectorAll(".pixel-box");
+const pixelContent0 = document.querySelector('#pixel0');
+const pixelContent1 = document.querySelector('#pixel1');
+// const pixelMedia = document.querySelector('pixel-media')
 
-logic.addEventListener('click', function() {
-  certificateLogic.classList.add('clicked');
-})
 
-objPython.addEventListener('click', function() {
-  oriPython.classList.add('clicked');
-})
-
-copilotStudio.addEventListener('click', function() {
-  studio.classList.add('clicked');
-})
-
-uni.addEventListener('click', function() {
-  declacacaoUni.classList.add('clicked');
-})
-superiorEstacio.addEventListener('click', function() {
-    superiorEstacioDiploma.classList.add('clicked');
-})
-
-ingles.addEventListener('click', function() {
-    inglesCertificate.classList.add('clicked');
-})
-
-iA.addEventListener('click', function() {
-    integracaoIa.classList.add('clicked');
-})
-
-py.addEventListener('click', function() {
-    certificatePython.classList.add('clicked');
-})
-
-close.forEach(close => {
-  close.addEventListener('click', function() {
-    const parent = this.closest('.pop-img');
-    if (parent) {
-      parent.classList.remove('clicked');
+iconLightOrDark.addEventListener('click', function(){
+    iconLightOrDark.classList.toggle('active')
+    if(iconLightOrDark.classList.contains('active')){
+        icon.classList.remove('ph-sun')
+        icon.classList.add('ph-moon')
+        html.classList.toggle('dark')
+    }else{
+        icon.classList.remove('ph-moon')
+        icon.classList.add('ph-sun')
+        html.classList.toggle('dark')
     }
+
+});
+
+
+pixelBoxes.forEach((box, index) => {
+  box.addEventListener("click", function() {
+    // exemplo: alternar o conteúdo correspondente
+    const content = document.querySelector(`#pixel${index}`);
+    content.classList.toggle("hidden");
   });
 });
-
-
-menu.addEventListener('click', function () {
-  nav.classList.toggle('show');
-  menu.classList.toggle('hex')
-});
-
