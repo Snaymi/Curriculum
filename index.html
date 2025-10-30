@@ -312,27 +312,51 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide project">
                 <div class="banner-project">
-                  <img src="img/proto-io.webp" alt="">
+                  <a href="https://snaymi.github.io/proto.io/" target="_blank">
+                    <img src="img/proto-io.webp" alt="">
+                  </a>
                 </div>
                 <p>Proto.io Website</p>
               </div>
               <div class="swiper-slide project">
                 <div class="banner-project">
-                  <img src="img/rustico.webp" alt="">
+                  <a href="https://snaymi.github.io/rustico-2.0/" target="_blank">
+                    <img src="img/rustico.webp" alt="">
+                  </a>
                 </div>
                 <p>Rústico Website</p>
               </div>
               <div class="swiper-slide project">
                 <div class="banner-project">
-                  <img src="img/odontorio.webp" alt="">
+                  <a href="https://snaymi.github.io/odontorio/" target="_blank">
+                    <img src="img/odontorio.webp" alt="">
+                  </a>
                 </div>
                 <p>Odontório Website</p>
               </div>
               <div class="swiper-slide project">
                 <div class="banner-project">
-                  <img src="img/hardcore.webp" alt="">
+                  <a href="https://snaymi.github.io/healthy/" target="_blank">
+                    <img src="img/hardcore.webp" alt="">
+                  </a>
                 </div>
                 <p>Hardcore Website</p>
+              </div>
+              <div class="swiper-slide project">
+                <div class="banner-project">
+                  <a href="https://snaymi.github.io/Neftlix-Home/" target="_blank">
+                    <img src="img/netflix-home.webp" alt="">
+                  </a>
+                </div>
+                <p>Netflix-Home Website</p>
+              </div>
+              <div class="swiper-slide project">
+                <div class="banner-project">
+                  <a href="https://snaymi.github.io/space/" target="_blank">
+                    <img src="img/space.webp" alt="">
+                  </a>
+                </div>
+                <p>Space Website</p>
               </div>
             </div>
 
@@ -469,20 +493,23 @@
   const swiper = new Swiper('.all-projects', {
     slidesPerView: 1,
     spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
     navigation: {
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-prev'
     },
     breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      }
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
     }
   });
 </script>
+
 
 
 

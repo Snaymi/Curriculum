@@ -422,7 +422,8 @@ ul {
 .banner-project img {
     border-radius: 8px;
     margin-bottom: 8px;
-    max-width: 180px;
+    min-width: 180px;
+    max-width: 181px;
     height: 100px;
 }
 
