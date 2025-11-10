@@ -128,7 +128,7 @@ ul {
     font-size: 25px;
 }
 
-.right-content p {
+.right-content p, .right-content a {
     font-size: 12px;
 }
 
