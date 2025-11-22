@@ -184,7 +184,7 @@ ul {
 }
 
 .css-progress {
-    width: 85%;
+    width: 90%;
     height: 6px;
     background-color: var(--primary-300);
     border-radius: 10px;
@@ -212,14 +212,14 @@ ul {
 }
 
 .vue-progress {
-    width: 25%;
+    width: 65%;
     height: 6px;
     background-color: var(--primary-300);
     border-radius: 10px;
 }
 
 .svelt-progress {
-    width: 30%;
+    width: 45%;
     height: 6px;
     background-color: var(--primary-300);
     border-radius: 10px;
@@ -234,6 +234,19 @@ ul {
 
 .react-progress {
     width: 10%;
+    height: 6px;
+    background-color: var(--primary-300);
+    border-radius: 10px;
+}
+.tailwind-progress {
+    width: 46%;
+    height: 6px;
+    background-color: var(--primary-300);
+    border-radius: 10px;
+}
+
+.bootstrap-progress {
+    width: 25%;
     height: 6px;
     background-color: var(--primary-300);
     border-radius: 10px;
