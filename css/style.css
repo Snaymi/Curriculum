@@ -219,7 +219,7 @@ ul {
 }
 
 .svelt-progress {
-    width: 45%;
+    width: 50%;
     height: 6px;
     background-color: var(--primary-300);
     border-radius: 10px;
