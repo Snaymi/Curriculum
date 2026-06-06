@@ -494,6 +494,43 @@
       </div>
     </div>
   </div>
+  <div class="ai-chat">
+  <button class="ai-chat-button" id="aiChatButton" type="button" aria-label="Abrir chat com IA">
+    <img src="img/qwen.svg" alt="" />
+  </button>
+
+  <div class="ai-chat-window" id="aiChatWindow">
+    <div class="ai-chat-header">
+      <div>
+        <strong>IA do Currículo</strong>
+        <p>Pergunte sobre meu perfil</p>
+      </div>
+
+      <button class="ai-chat-close" id="aiChatClose" type="button" aria-label="Fechar chat">
+        ×
+      </button>
+    </div>
+
+    <div class="ai-chat-messages" id="aiChatMessages">
+      <div class="ai-message ai-message-bot">
+        Olá! Sou a IA do currículo do Snaymi. Você pode perguntar sobre experiências, habilidades, formação ou projetos.
+      </div>
+    </div>
+
+    <form class="ai-chat-form" id="aiChatForm">
+      <input
+        type="text"
+        id="aiChatInput"
+        placeholder="Digite sua pergunta..."
+        autocomplete="off"
+      />
+
+      <button type="submit">
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>
   <div class="footer">
     <div class="footer-content container">
       <p>Desenvolvedor Front‑End focado em entregar interfaces acessíveis e performáticas; aberto a oportunidades para colaborar em projetos web que valorizem usabilidade e qualidade.</p>
