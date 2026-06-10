@@ -1,4 +1,4 @@
-const API_URL = 'https://curriculum-api-izmc.onrender.com/api/groq/chat'
+const GROQ_CHAT_API_URL = 'https://curriculum-api-izmc.onrender.com/api/groq/chat'
 
 async function sendMessageToGroq(message) {
   const response = await fetch(GROQ_CHAT_API_URL, {
