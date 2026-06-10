@@ -43,14 +43,7 @@ const aiChatForm = document.querySelector("#aiChatForm");
 const aiChatInput = document.querySelector("#aiChatInput");
 const aiChatMessages = document.querySelector("#aiChatMessages");
 
-const mockResponses = [
-  "Snaymi é desenvolvedor Front-End, com foco em criação de interfaces responsivas, componentes reutilizáveis e integração com APIs.",
-  "Ele tem experiência com HTML, CSS, JavaScript, Vue, Svelte, Bootstrap, Tailwind CSS e Git.",
-  "No portfólio dele existem projetos como Proto.io, Rústico, Odontório, Hardcore, Netflix-Home, Space e Disney Home.",
-  "A formação principal dele é em Sistemas de Informação pela Universidade Estácio de Sá, concluída em 2024.",
-  "Ele também está cursando Análise e Desenvolvimento de Sistemas pela UniCesumar.",
-  "Este chat ainda está em modo demonstração. Em breve ele será conectado a uma IA real para responder com mais precisão."
-];
+
 
 function toggleAiChat() {
   aiChatWindow.classList.toggle("open");
@@ -81,15 +74,13 @@ function createMessage(text, type) {
 
   aiChatMessages.appendChild(message);
   aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+
+  return message;
 }
 
-function getMockResponse() {
-  const randomIndex = Math.floor(Math.random() * mockResponses.length);
 
-  return mockResponses[randomIndex];
-}
 
-function handleAiChatSubmit(event) {
+async function handleAiChatSubmit(event) {
   event.preventDefault();
 
   const question = aiChatInput.value.trim();
@@ -101,12 +92,29 @@ function handleAiChatSubmit(event) {
   createMessage(question, "user");
 
   aiChatInput.value = "";
+  aiChatInput.disabled = true;
 
-  setTimeout(() => {
-    const response = getMockResponse();
+  const submitButton = aiChatForm.querySelector("button");
+  submitButton.disabled = true;
+  submitButton.textContent = "Enviando...";
 
-    createMessage(response, "bot");
-  }, 600);
+  const loadingMessage = createMessage("Pensando...", "bot");
+
+  try {
+    const response = await sendMessageToGroq(question);
+
+    loadingMessage.textContent = response;
+  } catch (error) {
+    console.error("Erro ao conversar com a IA:", error);
+
+    loadingMessage.textContent =
+      error.message || "Não foi possível conectar ao assistente no momento.";
+  } finally {
+    aiChatInput.disabled = false;
+    submitButton.disabled = false;
+    submitButton.textContent = "Enviar";
+    aiChatInput.focus();
+  }
 }
 
 if (
