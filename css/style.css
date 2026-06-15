@@ -25,7 +25,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -171,85 +170,69 @@ ul {
 
 .progress-bar {
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid var(--neutral-7);
     margin-top: 8px;
     border-radius: 12px;
 }
 
-.html-progress {
-    width: 80%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
-}
-
-.css-progress {
-    width: 90%;
+.js-progress,
+.vue-progress,
+.react-progress,
+.tailwind-progress,
+.typescript-progress,
+.node-progress,
+.nest-progress,
+.sql-progress,
+.mongo-progress,
+.git-progress,
+.ai-progress {
     height: 6px;
     background-color: var(--primary-300);
     border-radius: 10px;
 }
 
 .js-progress {
-    width: 40%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
-}
-
-.python-progress {
-    width: 40%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
-}
-
-.outsystem-progress {
-    width: 20%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
+    width: 78%;
 }
 
 .vue-progress {
-    width: 65%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
-}
-
-.svelt-progress {
-    width: 50%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
-}
-
-.angular-progress {
-    width: 15%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
+    width: 80%;
 }
 
 .react-progress {
-    width: 10%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
-}
-.tailwind-progress {
-    width: 46%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
+    width: 80%;
 }
 
-.bootstrap-progress {
-    width: 25%;
-    height: 6px;
-    background-color: var(--primary-300);
-    border-radius: 10px;
+.tailwind-progress {
+    width: 76%;
+}
+
+.typescript-progress {
+    width: 72%;
+}
+
+.node-progress {
+    width: 65%;
+}
+
+.nest-progress {
+    width: 58%;
+}
+
+.sql-progress {
+    width: 62%;
+}
+
+.mongo-progress {
+    width: 60%;
+}
+
+.git-progress {
+    width: 82%;
+}
+
+.ai-progress {
+    width: 68%;
 }
 
 .skill p {
@@ -294,6 +277,12 @@ ul {
 
 .main-content h2 {
     color: var(--neutral-9)
+}
+
+.summary-content p {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--neutral-8);
 }
 
 .pixel {
@@ -345,6 +334,20 @@ ul {
     height: auto;
 }
 
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    padding-left: 16px;
+    list-style-position: outside;
+}
+
+.experience-list li {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--neutral-8);
+}
+
 .pixel-content.hidden {
     max-height: 0;
     opacity: 0;
@@ -373,12 +376,14 @@ ul {
 
 .all-course {
     display: flex;
-    column-gap: 40px;
-    ;
+    column-gap: 32px;
+    row-gap: 18px;
+    flex-wrap: wrap;
 }
 
 .course-content {
     display: flex;
+    flex: 1 1 260px;
     max-width: 292px;
     justify-content: space-between;
     column-gap: 16px;
@@ -429,7 +434,22 @@ ul {
 .project p {
     font-size: 12px;
     font-family: 'inter', sans-serif;
+    font-weight: 600;
     letter-spacing: 0;
+    color: var(--neutral-10);
+}
+
+.project small {
+    display: block;
+    max-width: 181px;
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--neutral-8);
+}
+
+.banner-project a {
+    display: block;
 }
 
 .banner-project img {
@@ -438,6 +458,8 @@ ul {
     min-width: 180px;
     max-width: 181px;
     height: 100px;
+    object-fit: cover;
+    background-color: var(--neutral-10);
 }
 
 .ai-chat {
@@ -630,6 +652,7 @@ ul {
 }
 
 .swiper-wrapper {
+    display: flex;
     max-width: 600px;
 }
 
@@ -663,7 +686,7 @@ ul {
 }
 
 .right-box,
-.mobile-position, .mobile-showing,.icons-mobile {
+.mobile-position, .icons-mobile {
     display: none;
 }
 
@@ -800,6 +823,11 @@ ul {
         .all-course {
             flex-direction: column;
             row-gap: 10px;
+        }
+
+        .course-content {
+            flex: none;
+            max-width: 100%;
         }
 
         .middle-right {
